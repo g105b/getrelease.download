@@ -29,7 +29,7 @@ Example: https://getrelease.download/phpstan/phpstan
 
 End the URL with the version constraint (without asset filename) to see a list of available assets.
 
-Example: https://getrelease.download/phpstan/phpstan/*
+Example: https://getrelease.download/phpstan/phpstan/0.*
 
 *** 
 
