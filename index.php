@@ -262,7 +262,7 @@ website:
 		End the URL with the version constraint (without asset filename) to see a list of available assets.
 	</p>
 	<p>
-		Example: <a href="/phpstan/phpstan/*">getrelease.download/phpstan/phpstan/*</a>
+		Example: <a href="/phpstan/phpstan/*">getrelease.download/phpstan/phpstan/0.12.64</a>
 	</p>
 
 	<hr />
