@@ -5,8 +5,8 @@ Examples
 --------
 
 + sloria's doitlive, zip archive, the latest version: https://getrelease.download/sloria/doitlive/*/zip
-+ PHPStan, phar archive, >=v0.12: https://getrelease.download/phpstan/phpstan/>=0.12/phar
-+ Forty Seven Effect's Arduino MIDI library, zip archive, v5.*: https://getrelease.download/FortySevenEffects/arduino_midi_library/5.*/zip
++ PHPStan, phar archive, latest release: https://getrelease.download/phpstan/phpstan/latest/phar
++ Forty Seven Effect's Arduino MIDI library, zip archive, at least v5.0: https://getrelease.download/FortySevenEffects/arduino_midi_library/>=5.0/zip
 + Pixi.js, minified JavaScript, ^5.3: https://getrelease.download/pixijs/pixi.js/^5.3/pixi.min.js
 
 Usage
