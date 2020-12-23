@@ -17,7 +17,7 @@ The URL takes the following form:
 + https://getrelease.download/
 + Github organisation
 + Github repository
-+ Version constraint
++ Version constraint (semver, or "latest")
 + Asset filename or extension
   
 Extras
