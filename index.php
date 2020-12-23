@@ -84,7 +84,9 @@ if(!$version) {
 	exit;
 }
 
-$releaseVersionNumberList = \Composer\Semver\Semver::satisfiedBy($releaseVersionNumberList, $version);
+if($version !== "latest") {
+	$releaseVersionNumberList = \Composer\Semver\Semver::satisfiedBy($releaseVersionNumberList, $version);
+}
 
 if(empty($releaseVersionNumberList)) {
 	header("Location: $uri?error=no-matching-version");
