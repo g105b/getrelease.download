@@ -3,6 +3,7 @@
 	"description": "Download a release from Github using a single fuzzy-matched URL.",
 
 	"require": {
-		"composer/semver": ">=3.2.4"
+		"composer/semver": ">=3.2.4",
+		"ext-curl": "*"
 	}
 }

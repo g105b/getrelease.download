@@ -6,6 +6,7 @@ define("ERROR", [
 ]);
 
 $auth = file_get_contents("auth");
+$auth = trim($auth);
 $uri = $_SERVER["REQUEST_URI"];
 $path = trim(parse_url($uri, PHP_URL_PATH), "/");
 [$organisation, $repository, $version, $file] = explode(
@@ -13,9 +14,8 @@ $path = trim(parse_url($uri, PHP_URL_PATH), "/");
 	$path
 );
 
-if($path === ""
-|| isset($_GET["error"])) {
-	goto website;
+if($path === "" || isset($_GET["error"])) {
+	goto website; // haters gonna hate :)
 }
 else {
 	if(empty($organisation) || empty($repository)) {
