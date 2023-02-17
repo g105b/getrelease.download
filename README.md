@@ -14,11 +14,12 @@ Usage
 
 The URL takes the following form:
 
-+ https://getrelease.download/
-+ Github organisation
-+ Github repository
-+ Version constraint (semver, or "latest")
-+ Asset filename or extension
++ `https://getrelease.download`
++ `/org` Github organisation
++ `/repo` Github repository
++ `/1.2.3` Version constraint (semver, or "latest")
++ `/xyz` Asset filename or extension
++ `?file=whatever` Specify the filename (for if there are multiple files with the same extension in the same release)
   
 Extras
 ------

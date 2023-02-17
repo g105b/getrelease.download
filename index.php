@@ -128,6 +128,10 @@ foreach($latestMatchingRelease->assets as $asset) {
 		continue;
 	}
 
+	if(isset($_GET["file"]) && $_GET["file"] !== $assetFile) {
+		continue;
+	}
+
 	header("Location: $asset->browser_download_url");
 	exit;
 }
@@ -236,21 +240,12 @@ website:
 		The URL takes the following form:
 	</p>
 	<ul>
-		<li>
-			https://getrelease.download/
-		</li>
-		<li>
-			Github organisation
-		</li>
-		<li>
-			Github repository
-		</li>
-		<li>
-			Version constraint
-		</li>
-		<li>
-			Asset filename or extension
-		</li>
+		<li><code>https://getrelease.download</code></li>
+		<li><code>/org</code> Github organisation</li>
+		<li><code>/repo</code> Github repository</li>
+		<li><code>/1.2.3</code> Version constraint (semver, or "latest")</li>
+		<li><code>/xyz</code> Asset filename or extension</li>
+		<li><code>?file=whatever</code> Specify the filename (for if there are multiple files with the same extension in the same release)</li>
 	</ul>
 
 	<p>Extras:</p>
